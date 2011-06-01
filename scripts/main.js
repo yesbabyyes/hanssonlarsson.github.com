@@ -747,8 +747,10 @@ if (!JSON) {
   var contentPath, pages, render;
   pages = {};
   render = function(page, push) {
+    var title;
     $("#content").html(page.content);
-    $("title").text(page.title);
+    title = $("title").text();
+    $("title").text("" + page.title + " " + (title.substr(title.lastIndexOf("|"))));
     $('body').animate({
       scrollTop: 0
     });
@@ -756,7 +758,7 @@ if (!JSON) {
       return window.history.pushState(page, page.title, page.url);
     }
   };
-  window.history.onpopstate = function(e) {
+  window.onpopstate = function(e) {
     return render(e.state, false);
   };
   contentPath = function(path) {
