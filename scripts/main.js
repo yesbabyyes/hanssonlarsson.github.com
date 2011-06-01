@@ -747,10 +747,12 @@ if (!JSON) {
   var contentPath, pages, render;
   pages = {};
   render = function(page, push) {
-    var title;
+    var pos, siteTitle, title;
     $("#content").html(page.content);
     title = $("title").text();
-    $("title").text("" + page.title + " " + (title.substr(title.lastIndexOf("|"))));
+    pos = title.lastIndexOf("|");
+    siteTitle = pos === -1 ? "| " + title : title.substr(pos);
+    $("title").text("" + page.title + " " + siteTitle);
     $('body').animate({
       scrollTop: 0
     });
