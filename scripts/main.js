@@ -761,7 +761,9 @@ if (!JSON) {
     }
   };
   window.onpopstate = function(e) {
-    return render(e.state, false);
+    if (e.state) {
+      return render(e.state, false);
+    }
   };
   contentPath = function(path) {
     var p;
