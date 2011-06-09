@@ -189,7 +189,7 @@ body {
 header#main-header,
 section#content {
   width: 960px;
-  margin: 0.75em auto;
+  margin: 0 auto;
 }
 header#main-header {
   margin: 1.5em auto 3em;
