@@ -746,17 +746,17 @@ if (!JSON) {
 }, "main": function(exports, require, module) {(function() {
   var contentPath, pages, render;
   pages = {};
-  render = function(page, push) {
+  render = function(page, navigateTo) {
     var pos, siteTitle, title;
     $("#content").html(page.content);
     title = $("title").text();
     pos = title.lastIndexOf("|");
     siteTitle = pos === -1 ? "| " + title : title.substr(pos);
     $("title").text("" + page.title + " " + siteTitle);
-    $('body').animate({
-      scrollTop: 0
-    });
-    if (push) {
+    if (navigateTo) {
+      $('body').animate({
+        scrollTop: 0
+      });
       return window.history.pushState(page, page.title, page.url);
     }
   };
