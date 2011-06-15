@@ -1,180 +1,11 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
+html {
+  min-height: 100%;
   font-size: 100%;
-  vertical-align: baseline;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
 }
 body {
-  line-height: 1;
-  color: #000;
-  background: #fff;
-}
-ol,
-ul {
-  list-style: none;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-a img {
-  border: none;
-}
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary {
   margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  display: block;
-}
-body {
-  font: 0.875em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-a {
-  color: #000;
-  text-decoration: underline;
-}
-a:hover {
-  color: #333;
-  text-shadow: 0 0 0.5em #36f;
-}
-a:active {
-  text-shadow: 0 0 0.5em #03f;
-}
-aside a {
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #111;
-}
-h1 {
-  font-size: 3em;
-  line-height: 1;
-  margin-bottom: 0.5em;
-}
-article h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-aside h1 {
-  font-size: 1em;
-  font-weight: bold;
-}
-h2 {
-  font-size: 2em;
-  line-height: 1.25;
-  margin-bottom: 0.25em;
-}
-h3 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1em;
-}
-h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
-}
-h5 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-}
-h6 {
-  font-size: 1em;
-  font-weight: bold;
-}
-p {
-  margin-bottom: 1.5em;
-}
-html,
-body {
   min-height: 100%;
 }
 body {
@@ -186,9 +17,253 @@ body {
   background-repeat: repeat-x;
   background-position: bottom center;
 }
+body,
+button,
+input,
+select,
+textarea {
+  font: 14px/1.625 Georgia, serif;
+  *font-size: 0.875em;
+  color: #222;
+}
+p,
+blockquote,
+q,
+pre,
+address,
+hr,
+code,
+samp,
+dl,
+ol,
+ul,
+form,
+table,
+fieldset,
+menu,
+h4,
+h5,
+h6,
+img {
+  margin: 0 0 1.625em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Palatino", "Palatino Linotype", "Book Antiqua", "FreeSerif", serif;
+}
+h1 {
+  font-size: 4.25em;
+  line-height: 1.471em;
+  margin: 0 0 0.3824em;
+}
+aside h1 {
+  font-size: 1em;
+}
+h2 {
+  font-size: 2.625em;
+  line-height: 1.2381em;
+  margin: 0 0 0.619em;
+}
+h3 {
+  font-size: 1.625em;
+  line-height: 1em;
+  margin: 0 0 1em;
+}
+h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+small {
+  font-size: 0.625em;
+  margin: 0 0 2.6em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+pre,
+code,
+kbd,
+samp {
+  font: 1em/1.625em Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-align: left;
+}
+tr,
+th,
+td {
+  padding-right: 1.625em;
+  border-bottom: 1px solid #333;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+legend {
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button-moz-focus-inner,
+input-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+blockquote,
+q,
+cite {
+  font-style: italic;
+}
+blockquote {
+  padding-left: 1.625em;
+  border-left: 3px solid #ccc;
+}
+blockquote > p {
+  padding: 0;
+}
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+li ul,
+li ol {
+  margin: 0 1.625em;
+}
+dl dd {
+  margin-left: 1.625em;
+}
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: none;
+}
+figure {
+  margin: 0;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #333;
+  cursor: help;
+}
+ins,
+mark {
+  text-decoration: none;
+}
+mark {
+  background: #ff0;
+}
+ins {
+  background: #ff9;
+}
+del {
+  text-decoration: line-through;
+}
+strong,
+b,
+dt {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+var,
+address {
+  font-style: normal;
+}
+sub,
+sup {
+  font-size: 0.625em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
 header#main-header,
 section#content {
-  width: 960px;
   margin: 0 auto;
 }
 header#main-header {
@@ -257,23 +332,103 @@ section#content article:after {
   transform: skew(15deg) rotate(6deg);
 }
 section#content article {
-  float: left;
-  width: 70%;
   padding: 4.5em 3em;
+  margin-bottom: 1.5em;
 }
 section#content article:first-child {
   min-height: 36em;
 }
 section#content aside {
-  display: inline-block;
-  float: right;
-  width: 15%;
   padding: 1.5em;
   margin-bottom: 1.5em;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
 }
 footer#main-footer {
   width: 100%;
   margin: 3.75em auto 0;
   padding-top: 13.5em;
   background: transparent url("../images/stockholm_skyline.svg") no-repeat top center;
+}
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (max-width: 1024px) {
+  body section#content aside nav ul {
+    zoom: 1;
+  }
+  body section#content aside nav ul:before,
+  body section#content aside nav ul:after {
+    content: "";
+    display: table;
+  }
+  body section#content aside nav ul:after {
+    clear: both;
+  }
+  body section#content aside nav ul li {
+    float: left;
+    margin-right: 1.625em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body header#main-header,
+  body section#content {
+    width: 960px;
+  }
+  body section#content article {
+    width: 70%;
+    float: left;
+  }
+  body section#content aside {
+    display: inline-block;
+    width: 15%;
+    float: right;
+  }
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #222 !important;
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 2;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
